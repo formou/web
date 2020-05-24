@@ -28,47 +28,71 @@
                 <br/>
             </div>
         </div>
-        <section class="page-section" id="entrar">
+        <section class="page-section">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Entrar</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Dados Pessoais</h2>
+                <br/>
+                <div class="row">
+                <div class="col-xl-12 mb-3 text-center">
+                    <br/>
+                    <img class="text-left" src="assets/img/portfolio/step01.png">
+                    <br/><br/>
+                   
+                </div>
+            </div>
                 <!-- Contact Section Form-->
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
                         <form id="contactForm" name="sentMessage" novalidate="novalidate">
                             <div class="control-group">                               
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2"> 
-                                    <span>E-mail ou celular</span>                                  
+                                <div class="form-group"> 
+                                    <span>Nome Completo</span>                                  
+                                    <input class="form-control" id="name" type="text" required="required" />                                   
+                                </div>
+                            </div>
+                            <div class="control-group">   
+                                <span>Estudante ou docente?</span>                              
+                                <div> 
+                                    <span class="text-left"><input type="radio" name="rdTypeUser"> Estudante </span>  
+                                    <span style="padding-left: 10%;"></span><input  type="radio" name="rdTypeUser"> Docente </span>                                                              
+                                </div>
+                            </div>  
+                            <div class="control-group">                               
+                                <div class="form-group"> 
+                                    <span>Curso</span>                                  
+                                    <input class="form-control" id="name" type="text" required="required" />                                   
+                                </div>
+                            </div> 
+                            <div class="control-group">                               
+                                <div class="form-group"> 
+                                    <span>E-mail</span>                                  
                                     <input class="form-control" id="name" type="email" required="required" />                                   
                                 </div>
                             </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <span>Senha</span> 
-                                    <input class="form-control" id="senha" type="senha" required="required"/>                                    
+                            <div class="control-group">                                                            
+                                     <span>Senha</span>                                  
+                                    <input id="name" class="form-control" type="password" required="required" />                                   
+                              
+                                    <span>Confirmar Senha</span>                                  
+                                    <input id="name"class="form-control" type="password" required="required" />    
+                            </div>                                                                                            
+                            <div class="control-group">                               
+                                <div>                                 
+                                    <input id="name" type="checkbox" required="required" />  
+                                    <span>Aceito os <b class="span-text">Termos de Uso</b> e as <b class="span-text">Políticas de Privacidade</b> </span>                                   
                                 </div>
-                            </div>                          
-                            <br />
-                            <label>Esqueci minha senha</label>
-                            <br/>
+                            </div>
                             <div class="control-group">
-                                <button class="form-control btn btn-primary btn-md" id="sendMessageButton" type="submit">Enviar</button>
+                                <br/>
+                                <button class="form-control btn btn-primary btn-md" id="sendMessageButton" type="submit">FINALIZAR CADASTRO</button>
                             </div>
                         </form>
-                        <p class="text-center"><b>Não tem conta?</b> <span>INSCREVA-SE</span></p>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="clear">
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-        </div>
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container">

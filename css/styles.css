@@ -223,8 +223,8 @@ th {
 }
 
 label {
-  display: inline-block;
-  margin-bottom: 0.5rem;
+  display: inline-block !important;
+  margin-bottom: 0.5rem !important;
 }
 
 button {
@@ -2007,7 +2007,7 @@ pre code {
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
-  border: 0.125rem solid #ced4da;
+  border:1px solid #ced4da;
   border-radius: 0.5rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -3986,7 +3986,7 @@ input[type=button].btn-block {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  align-items: right;
+  align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
 }
@@ -10212,7 +10212,7 @@ h3 {
 
 .floating-label-form-group {
   position: relative;
-  border-bottom: 1px solid #e9ecef;
+  /*border-bottom: 1px solid #e9ecef;*/
 }
 .floating-label-form-group input,
 .floating-label-form-group textarea {
@@ -10222,8 +10222,8 @@ h3 {
   padding-right: 0;
   padding-left: 0;
   resize: none;
-  border: none;
-  border-radius: 0;
+  border: 1px solid #6c757d;
+  border-radius: 8px;
   background: none;
   box-shadow: none !important;
 }
@@ -10231,7 +10231,7 @@ h3 {
   font-size: 0.85em;
   line-height: 1.764705882em;
   position: relative;
-  z-index: 0;
+  z-index: -1;
   top: 2em;
   display: block;
   margin: 0;
@@ -10243,12 +10243,12 @@ h3 {
   border-left: 1px solid #e9ecef;
 }
 
-.floating-label-form-group-with-value label {
+.floating-label-form-group-with-value{
   top: 0;
   opacity: 1;
 }
 
-.floating-label-form-group-with-focus label {
+.floating-label-form-group-with-focus{
   color: #1abc9c;
 }
 
